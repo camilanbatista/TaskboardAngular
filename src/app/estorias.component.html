@@ -1,0 +1,16 @@
+<div class="estoria-card" *ngFor = "let estoria of taskboard" id="estoria-card{{estoria.id}}" [hidden]="!estoria.exibeCard">
+    <button class="finalizar" (click)="finalizarClick(estoria)">Finalizar</button>
+    <h2>{{estoria.titulo}}</h2> 
+    <span class="pontuacao">{{estoria.pontos}} pontos</span>
+    <p>{{estoria.narrativa}}</p>
+    <a href="#" (click)="exibeTarefasClick(estoria)">Tarefas</a>
+    <div class="tarefa" [hidden]="!estoria.exibeTarefas">
+    	<div class="tarefa-item">Tarefa 1: Isso e aquilo</div>
+    	<div class="tarefa-item">Tarefa 2: Isso e aquilo outro</div>
+    	<div class="tarefa-nova">
+    		<p><input type="text" size="30" placeholder="Nova Tarefa"></p>
+    		<p><input type="text" size="30" placeholder="Descrição"></p>
+    		<p><button>Adicionar Tarefa</button></p>
+    	</div>
+    </div>
+</div>

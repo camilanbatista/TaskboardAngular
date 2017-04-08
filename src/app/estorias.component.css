@@ -1,0 +1,32 @@
+.estoria-card{
+    border: 3px solid #000;
+    margin: 20px 0px;
+    padding: 10px;
+}
+
+.finalizar{
+    padding: 10px;
+    float: right;
+    font-weight: bold;
+}
+
+.estoria-card .pontuacao{
+    float: right;
+    font-weight: bold;
+}
+
+.tarefa-item{
+	border: 3px solid #000;
+    margin: 10px 0px;
+    padding: 10px;
+}
+
+.tarefa-nova input{
+	border: 2px solid;
+	padding: 5px;
+}
+
+.tarefa-nova button{
+	padding: 5px;
+    font-weight: bold;
+}
